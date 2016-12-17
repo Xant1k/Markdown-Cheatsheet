@@ -44,23 +44,35 @@ Headings
 ```
 ###### Heading Level 6
 ```
+---
 
 Bold
 
+>
+```
 **This text will be bold**
 __This text will be bold__
-
+```
 
 Italic
 
+>
+```
 *This text will be italic*
 _This text will be italic_
 
 
 Underline
-<u>underline text</u>
 
+>
+```
+<u>underline text</u>
+```
 
 Strikethrough
 ~~text~~
+
+>
+```
 <del>strikethrough text</del>
+```
