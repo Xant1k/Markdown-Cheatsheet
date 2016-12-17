@@ -3,7 +3,6 @@
 Markdown editing help
 
 https://help.github.com/categories/writing-on-github/
-https://daringfireball.net/projects/markdown/syntax
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
@@ -537,3 +536,92 @@ Task list
 Abbreviation
 
 Markup is based on [php markdown extra](https://michelf.ca/projects/php-markdown/extra/#abbr) definition, but without multiline support:
+
+
+> ## This is a header.
+> 
+> 1.   This is the first list item.
+> 2.   This is the second list item.
+> 
+> Here's some example code:
+> 
+>     return shell_exec("echo $input | $markdown_script");
+
+This is [an example](http://example.com/ "Title") inline link.
+
+[This link](http://example.net/) has no title attribute.
+
+
+If you’re referring to a local resource on the same server, you can use relative paths:
+
+See my [About](/about/) page for details.   
+Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:
+
+This is [an example][id] reference-style link.
+You can optionally use a space to separate the sets of brackets:
+
+This is [an example] [id] reference-style link.
+Then, anywhere in the document, you define your link label like this, on a line by itself:
+
+[id]: http://example.com/  "Optional Title Here"
+That is:
+
+Square brackets containing the link identifier (optionally indented from the left margin using up to three spaces);
+followed by a colon;
+followed by one or more spaces (or tabs);
+followed by the URL for the link;
+optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.
+The following three link definitions are equivalent:
+
+[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+NOTE: There is a known bug in Markdown.pl 1.0.1 which prevents single quotes from being used to delimit link titles.
+
+The link URL may, optionally, be surrounded by angle brackets:
+
+[id]: <http://example.com/>  "Optional Title Here"
+You can put the title attribute on the next line and use extra spaces or tabs for padding, which tends to look better with longer URLs:
+
+[id]: http://example.com/longish/path/to/resource/here
+    "Optional Title Here"
+Link definitions are only used for creating links during Markdown processing, and are stripped from your document in the HTML output.
+
+Link definition names may consist of letters, numbers, spaces, and punctuation — but they are not case sensitive. E.g. these two links:
+
+[link text][a]
+[link text][A]
+are equivalent.
+
+The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:
+
+[Google][]
+And then define the link:
+
+[Google]: http://google.com/
+Because link names may contain spaces, this shortcut even works for multiple words in the link text:
+
+Visit [Daring Fireball][] for more information.
+And then define the link:
+
+[Daring Fireball]: http://daringfireball.net/
+Link definitions can be placed anywhere in your Markdown document. I tend to put them immediately after each paragraph in which they’re used, but if you want, you can put them all at the end of your document, sort of like footnotes.
+
+Here’s an example of reference links in action:
+
+I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        "Google"
+  [2]: http://search.yahoo.com/  "Yahoo Search"
+  [3]: http://search.msn.com/    "MSN Search"
+  
+  A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+
+## title with anchor {#anchor}
+
+some text
+
+a link to [declared anchor](#anchor)
