@@ -291,14 +291,21 @@ You can create tables using pipes and dashes like this:
   Content Cell  | Content Cell
   Content Cell  | Content Cell
 
-Output:
-First Header	Second Header
-Content Cell	Content Cell
-Content Cell	Content Cell
-You can use markdown syntax within table cells for formatting:
-  First Header   | Second Header
-  -------------  | -------------
-  *Content Cell* | Content Cell
-  Content Cell   | Content Cell
-  
 
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
