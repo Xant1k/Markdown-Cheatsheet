@@ -9,34 +9,20 @@ https://daringfireball.net/projects/markdown/syntax
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
-<h3>Таблица без рамок</h3>
-<table>
+
+<h3>1</h3>
+<table class="md">
     <tr>
-        <th>Имя</th>
-        <th>Фамилия</th>
+        <th></th>
+        <th></th>
     </tr>
     <tr>
-        <td>Лариса</td>
-        <td>Исаева</td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>Дмитрий</td>
-        <td>Колесников</td>
-    </tr>
-</table>
-<h3>Таблица c рамками</h3>
-<table class="brd">
-    <tr>
-        <th>Имя</th>
-        <th>Фамилия</th>
-    </tr>
-    <tr>
-        <td>Лариса</td>
-        <td>Исаева</td>
-    </tr>
-    <tr>
-        <td>Дмитрий</td>
-        <td>Колесников</td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
