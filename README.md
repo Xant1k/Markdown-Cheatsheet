@@ -446,66 +446,6 @@ To put a code block within a list item, the code block needs to be indented twic
 *   A list item with a code block:
 
 
-[link text][a]
-[link text][A]
-are equivalent.
-
-
-[Google][]
-And then define the link:
-
-[Google]: http://google.com/
-
-Visit [Daring Fireball][] for more information.
-And then define the link:
-
-[Daring Fireball]: http://daringfireball.net/
-
-
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        "Google"
-  [2]: http://search.yahoo.com/  "Yahoo Search"
-  [3]: http://search.msn.com/    "MSN Search"
-Using the implicit link name shortcut, you could instead write:
-
-I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        "Google"
-  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
-  [msn]:    http://search.msn.com/    "MSN Search"
-Both of the above examples will produce the following HTML output:
-
-<p>I get 10 times more traffic from <a href="http://google.com/"
-title="Google">Google</a> than from
-<a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
-or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
-For comparison, here is the same paragraph written using Markdown's inline link style:
-
-I get 10 times more traffic from [Google](http://google.com/ "Google")
-than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
-[MSN](http://search.msn.com/ "MSN Search").
-The point of reference-style links is not that they're easier to write. The point is that with reference-style links, your document source is vastly more readable. Compare the above examples: using reference-style links, the paragraph itself is only 81 characters long; with inline-style links, it's 176 characters; and as raw HTML, it's 234 characters. In the raw HTML, there's more markup than there is text.
-
-``There is a literal backtick (`) here.``
-
-
-TEXT
-MultiMarkdown	Result
-This text is **bold**.	This text is bold.
-This text is also __bold__.	This text is also bold.
-This text is *italicized*.	This text is italicized.
-This text is also _italicized_.	This text is also italicized.
-`This is some code.`	This is some code.
-    This is a rather
-    long section of code
-    taking multiple lines	This is a rather
-long section of code
-taking multiple lines
-LINKS
-MultiMarkdown	Result
 Link to [Google](http://google.com).	Link to Google.
 Link to <http://google.com>.	Link to http://google.com.
 Link to [Google][] with attributes later in the document.
