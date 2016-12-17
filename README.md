@@ -547,36 +547,6 @@ Markup is based on [php markdown extra](https://michelf.ca/projects/php-markdown
 > 
 >     return shell_exec("echo $input | $markdown_script");
 
-This is [an example](http://example.com/ "Title") inline link.
-
-[This link](http://example.net/) has no title attribute.
-
-
-If you’re referring to a local resource on the same server, you can use relative paths:
-
-See my [About](/about/) page for details.   
-Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:
-
-This is [an example][id] reference-style link.
-You can optionally use a space to separate the sets of brackets:
-
-This is [an example] [id] reference-style link.
-Then, anywhere in the document, you define your link label like this, on a line by itself:
-
-[id]: http://example.com/  "Optional Title Here"
-That is:
-
-
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        "Google"
-  [2]: http://search.yahoo.com/  "Yahoo Search"
-  [3]: http://search.msn.com/    "MSN Search"
-  
-  A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
 
 ## title with anchor {#anchor}
 
