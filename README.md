@@ -446,33 +446,6 @@ To put a code block within a list item, the code block needs to be indented twic
 *   A list item with a code block:
 
 
-
-This is [an example](http://example.com/ "Title") inline link.
-
-[This link](http://example.net/) has no title attribute.
-Will produce:
-
-<p>This is <a href="http://example.com/" title="Title">
-an example</a> inline link.</p>
-
-<p><a href="http://example.net/">This link</a> has no
-title attribute.</p>
-
-
-See my [About](/about/) page for details.
-Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:
-
-This is [an example][id] reference-style link.
-You can optionally use a space to separate the sets of brackets:
-
-This is [an example] [id] reference-style link.
-Then, anywhere in the document, you define your link label like this, on a line by itself:
-
-[id]: http://example.com/  "Optional Title Here"
-
-[id]: http://example.com/longish/path/to/resource/here
-    "Optional Title Here"
-
 [link text][a]
 [link text][A]
 are equivalent.
@@ -487,8 +460,6 @@ Visit [Daring Fireball][] for more information.
 And then define the link:
 
 [Daring Fireball]: http://daringfireball.net/
-
-
 
 
 I get 10 times more traffic from [Google] [1] than from
