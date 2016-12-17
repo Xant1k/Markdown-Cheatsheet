@@ -42,29 +42,29 @@ Headings
 
 ---
 
-Bold
+**Bold**
 >
 ```
 **This text will be bold**
 __This text will be bold__
 ```
 
-Italic
+*Italic*
 >
 ```
 *This text will be italic*
 _This text will be italic_
 ```
 
-Underline
+<u>Underline</u>
 >
 ```
 <u>underline text</u>
 ```
 
-Strikethrough
-~~text~~
+<del>Strikethrough</del>
 >
 ```
 <del>strikethrough text</del>
+~~text~~
 ```
