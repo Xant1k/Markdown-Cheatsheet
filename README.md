@@ -384,62 +384,6 @@ Output:
 import abc
 If the first line of the codeblock contains a shebang, the language is derived from that and line numbers are used. If shebang line contains a full path, it will be included in the output. If it does not contain a path (a single / or even a space), then that shebang line will be omitted from output.
     #!/usr/bin/python
-    import abc
-	
-Output:
-1
-2
-#!/usr/bin/python
-import abc
-If using a code block of tildes or backticks, you can also specify the language on the first divider line
-~~~html
-<a href="#">My code</a>
-~~~
-```html
-<a href="#">My code</a>
-```
-
-Output:
-<a href="#">My code</a>
-Many languages are supported. See all the "short names" listed in the Pygments docs.
-Includes
-You can embed another wiki page directly:
-[[include ref=SamplePage]]
-No example output is available for this one because it only works on real wiki pages. Try it in your wiki!
-Also, you can embed a file directly from a repository! Just skip the ref parameter and pass repository, path and optional revision:
-[[include repo=code path=README]]
-
-[[include repo=myproject:code path=/ew/forms.py rev=fa61e7]]
-
-[[include repo=p:myproject:code path=/ew/forms.py]]
-Repo could be specified in three ways:
-app
-project:app
-neighborhood:project:app
-Where app is a repository's mount point, project is a project's shortname and neighborhood is a neighborhood's prefix that appears in url.
-Neighborhood Notifications
-You can list updates from all projects in a neighborhood by tool type. Max_number (default is 5) and sort (default is pubdate) are optional:
-[[neighborhood_feeds tool_name=wiki max_number=10 sort=pubdate]]
-Neighborhood Blog Posts
-You can view blog posts from all projects in a neighborhood. Max_number (default is 5) and sort (default is timestamp) are optional:
-[[neighborhood_blog_posts max_number=10 sort=timestamp]]
-Project Blog Posts
-You can view blog posts from all blogs in a project. Max_number (default is 5), mount point (leave empty to view posts from all blog tools in a project), and sort (default is timestamp) are optional:
-[[project_blog_posts max_number=10 sort=timestamp mount_point=news]]
-Download Button
-You can display a download button that links to the best download available for the active project. Please note that if you use this macro and there is no download associated with your project, the button will not appear.
-[[download_button]]
-Gittip Button
-You can display a Gittip button in your wiki. You will need to provide your gittip handle in the username parameter.
-[[gittip_button username=foo]]
-Project Member List
-You can display a list of project members. By default the list is limited to 20 members, and a link is provided to a page with the full list.
-[[members]]
-Project Screenshots
-You can show all the screenshots for the current project as thumbnails that are linked to the full-size image.
-[[project_screenshots]]
-
-
 
 Alternatively, for H1 and H2, an underline-ish style:
 
