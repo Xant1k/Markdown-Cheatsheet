@@ -301,12 +301,4 @@ You can use markdown syntax within table cells for formatting:
   *Content Cell* | Content Cell
   Content Cell   | Content Cell
   
-Output:
-First Header	Second Header
-Content Cell	Content Cell
-Content Cell	Content Cell
-You can also create tables using HTML code.
-Headers
-Just put 1 or more dashes or equals signs (--- or ===) below the title.
-
 
