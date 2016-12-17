@@ -9,6 +9,37 @@ https://daringfireball.net/projects/markdown/syntax
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
+<h3>Таблица без рамок</h3>
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+    </tr>
+    <tr>
+        <td>Лариса</td>
+        <td>Исаева</td>
+    </tr>
+    <tr>
+        <td>Дмитрий</td>
+        <td>Колесников</td>
+    </tr>
+</table>
+<h3>Таблица c рамками</h3>
+<table class="brd">
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+    </tr>
+    <tr>
+        <td>Лариса</td>
+        <td>Исаева</td>
+    </tr>
+    <tr>
+        <td>Дмитрий</td>
+        <td>Колесников</td>
+    </tr>
+</table>
+
 Headings
 
 # Heading Level 1
