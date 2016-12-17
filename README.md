@@ -165,3 +165,84 @@ Or:
 
 ```
 
+This is a paragraph.
+
+1. List Item 1
+2. List Item 2
+3. List Item 3
+
+
+```
+1. List Item 1
+2. List Item 2
+3. List Item 3
+```
+
+
+This is a paragraph.
+
+
+1. List Item 1
+1. List Item 2
+1. List Item 3
+
+```
+1. List Item 1
+1. List Item 2
+1. List Item 3
+```
+
+1. List Item
+    1. List Item
+    2. List Item
+        1. List Item
+    3. List Item
+
+```
+1. List Item
+    1. List Item
+    2. List Item
+        1. List Item
+    3. List Item
+```
+
+1. List Item 1
+
+    Second paragraph of list item 1
+
+    Third paragraph of list item 1
+
+2. List Item 2
+
+    Second paragraph of list item 2
+
+    Third paragraph of list item 2
+
+```
+1. List Item 1
+
+    Second paragraph of list item 1
+
+    Third paragraph of list item 1
+
+2. List Item 2
+
+    Second paragraph of list item 2
+
+    Third paragraph of list item 2
+```
+
+<blockquote>
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+</blockquote>
+
+<blockquote>
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+</blockquote>
+
