@@ -9,33 +9,6 @@ https://daringfireball.net/projects/markdown/syntax
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
-
-
-<h3>1</h3>
-<table class="md">
-<tr>
-<th># Heading Level 1</th>
-<th>
-```
-# Heading Level 1
-```
-</th>
-</tr>
-<tr>
-<td>## Heading Level 2</td>
-<td>
-```
-## Heading Level 2
-```
-</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-Headings
-
 # Heading Level 1
 ```
 # Heading Level 1
