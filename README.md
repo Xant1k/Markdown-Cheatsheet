@@ -6,7 +6,7 @@ Headings
 
 # Heading Level 1
 
-> Результат:
+>
 ```
 # Heading Level 1
 ```
