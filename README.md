@@ -360,32 +360,7 @@ you should escape &lt;unknown&gt; tags
 &copy; special entities work
 &amp;copy; if you want to escape it
 
-Table of Contents
-You can display a list of links to jump to headers in a document. Sub-headers will be nested.
-[TOC]
 
-# Section 1
-## Sub-section 1
-# Section 2
-
-Output:
-Section 1
-Sub-section 1
-Section 2
-Section 1
-Sub-section 1
-Section 2
-Code Highlighting
-The code highlighting syntax uses CodeHilite and is colored with Pygments. It follows the same syntax as regular Markdown code blocks, with ways to tell the highlighter what language to use for the code block.
-The language will be detected automatically, if possible. Or you can specify it on the first line with 3 colons and the language name.
-    :::python
-    import abc
-Output:
-import abc
-If the first line of the codeblock contains a shebang, the language is derived from that and line numbers are used. If shebang line contains a full path, it will be included in the output. If it does not contain a path (a single / or even a space), then that shebang line will be omitted from output.
-    #!/usr/bin/python
-
-Alternatively, for H1 and H2, an underline-ish style:
 
 Alt-H1
 
