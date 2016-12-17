@@ -157,7 +157,6 @@ Or:
     - List Item 1.3
 ```
 
-
   
   - List Item 1
 
@@ -183,7 +182,13 @@ Or:
     Second paragraph of list item 2
 
     Third paragraph of list item 2
+
+
 ```
+
+```
+
+
 
  
  This is a paragraph.
@@ -192,6 +197,14 @@ Or:
 2. List Item 2
 3. List Item 3
 
+
+```
+1. List Item 1
+2. List Item 2
+3. List Item 3
+```
+
+
 This is a paragraph.
 
 
@@ -199,13 +212,28 @@ This is a paragraph.
 1. List Item 2
 1. List Item 3
 
+```
+1. List Item 1
+1. List Item 2
+1. List Item 3
+```
+
 
 1. List Item
     1. List Item
     2. List Item
         1. List Item
     3. List Item
-    
+	
+```
+1. List Item
+    1. List Item
+    2. List Item
+        1. List Item
+    3. List Item
+```
+
+
 1. List Item 1
 
     Second paragraph of list item 1
@@ -218,6 +246,19 @@ This is a paragraph.
 
     Third paragraph of list item 2
     
+```
+1. List Item 1
+
+    Second paragraph of list item 1
+
+    Third paragraph of list item 1
+
+2. List Item 2
+
+    Second paragraph of list item 2
+
+    Third paragraph of list item 2
+```
 
 This is paragraph 1.
 
@@ -242,17 +283,48 @@ function fancyAlert(arg) {
 }
 ```
 
+```
+Usage: `hello("chibicode")`
+
+```ruby
+def hello(name)
+  puts "Hello #{name}!"
+end
+```
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+```
+
+
 
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
 
+```
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+```
+
 
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
+
+
+```
+
+```
 
 
 There are many different ways to style code with GitHub's markdown. If you have inline code blocks, wrap them in backticks: `var example = true`.  If you've got a longer block of code, you can indent with four spaces:
@@ -347,16 +419,16 @@ Use * or _ to emphasize things:
 **this is in bold**  and __so is this__
 
 ***this is bold and italic***  and ___so is this___
-Output:
-this is in italic and so is this
-this is in bold and so is this
-this is bold and italic and so is this
+
+
+
 You can strike through text using HTML like this:
 <s>this is strike through text</s>
 Output:
 this is strike through text
 A carriage return
 makes a line break.
+
 
 Two carriage returns make a new paragraph.
 Output:
@@ -2058,6 +2130,11 @@ https://github.com/edouard/human-markdown-reference
 Modified for MultiMarkdown syntax by the MMD Community.
 
 For the first interaction examples were used from the following websites.
+
+
+
+
+
 
 Byword:
 http://bywordapp.com/markdown/guide.html
