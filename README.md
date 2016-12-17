@@ -13,8 +13,8 @@ Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 <h3>1</h3>
 <table class="md">
     <tr>
-        <th></th>
-        <th></th>
+        <th># Heading Level 1</th>
+        <th># Heading Level 1</th>
     </tr>
     <tr>
         <td></td>
