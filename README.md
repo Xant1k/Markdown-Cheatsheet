@@ -348,18 +348,6 @@ Videos
 To embed a YouTube video, use the `embed` macro (only YouTube is supported at this time):
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 
-Escapes and HTML
-What if you want to just show asterisks, not italics?
-* this shows up in italics: *a happy day*
-* this shows the asterisks: \*a happy day\*
-
-
-To show a literal <b> or an unknown tag like <foobar> you need escape it with HTML entities: :
-<b>this will be bold</b>
-you should escape &lt;unknown&gt; tags
-&copy; special entities work
-&amp;copy; if you want to escape it
-
 
 
 Alt-H1
