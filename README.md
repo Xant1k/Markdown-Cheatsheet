@@ -14,11 +14,15 @@ Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 <table class="md">
     <tr>
         <th># Heading Level 1</th>
-        <th># Heading Level 1</th>
+        <th>```
+# Heading Level 1
+```</th>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>## Heading Level 2</td>
+        <td>```
+## Heading Level 2
+```</td>
     </tr>
     <tr>
         <td></td>
