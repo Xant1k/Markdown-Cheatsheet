@@ -3,8 +3,6 @@
 Markdown editing help
 
 https://help.github.com/categories/writing-on-github/
-http://cheatsheet.aboutmde.org/#
-http://mdp.tylingsoft.com/#
 https://daringfireball.net/projects/markdown/syntax
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
