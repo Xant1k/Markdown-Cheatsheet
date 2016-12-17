@@ -9,6 +9,606 @@ https://daringfireball.net/projects/markdown/syntax
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover tablefiltrable">
+    <thead>
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Sample</th>
+        <th>Rendering</th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+    <tr data-rows="2">
+        <td rowspan="2" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="strong" rowspan="2" data-filter-value="strong">
+            strong
+        </td>
+    
+	    
+		# Heading Level 1
+```
+# Heading Level 1
+```
+
+## Heading Level 2
+```
+## Heading Level 2
+```
+
+### Heading Level 3
+```
+### Heading Level 3
+```
+
+        <td class="large"><pre># Heading Level 1</pre></td>
+        <td class="large"><p><strong>```
+# Heading Level 1
+```</strong></p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>__hello__</pre></td>
+        <td class="large"><p><strong>hello</strong></p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="2">
+        <td rowspan="2" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="italic" rowspan="2" data-filter-value="italic">
+            italic
+        </td>
+    
+	    
+		
+        <td class="large"><pre>*hello*</pre></td>
+        <td class="large"><p><em>hello</em></p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>_hello_</pre></td>
+        <td class="large"><p><em>hello</em></p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="3">
+        <td rowspan="3" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="link" rowspan="3" data-filter-value="link">
+            link
+        </td>
+    
+	    
+		
+        <td class="large"><pre><http: example.com=""></http:></pre></td>
+        <td class="large"><p><a href="http://example.com/">http://example.com/</a></p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre><email@example.com></email@example.com></pre></td>
+        <td class="large"><p><a href="mailto:email@example.com">email@example.com</a></p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>[an hypertext link](http://example.com/ "Optional link title")</pre></td>
+        <td class="large"><p><a href="http://example.com/" title="Optional link title">an hypertext link</a></p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="anchor" rowspan="1" data-filter-value="anchor">
+            anchor
+        </td>
+    
+	    
+		
+        <td class="large"><pre>## title with anchor {#anchor}
+
+some text
+
+a link to [declared anchor](#anchor)</pre></td>
+        <td class="large"><h2 id="title-with-anchor-anchor-">title with anchor {#anchor}</h2>
+<p>some text</p>
+<p>a link to <a href="#anchor">declared anchor</a></p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="code" rowspan="1" data-filter-value="code">
+            code
+        </td>
+    
+	    
+		
+        <td class="large" style=""><pre>`function()`</pre></td>
+        <td class="large"><p><code>function()</code></p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="image" rowspan="1" data-filter-value="image">
+            image
+        </td>
+    
+	    
+		
+        <td class="large"><pre>![Alt text](http://upload.wikimedia.org/wikipedia/commons/5/5a/Wikipedia-logo-v2-fr.png "Optional image title")</pre></td>
+        <td class="large"><p><img src="http://upload.wikimedia.org/wikipedia/commons/5/5a/Wikipedia-logo-v2-fr.png" alt="Alt text" title="Optional image title"></p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="abbreviation" rowspan="1" data-filter-value="abbreviation">
+            abbreviation
+        </td>
+    
+	    
+		
+        <td class="large"><pre>A paragraph with the word HTML.
+
+*[HTML]: Hyper-Text Markup Language
+</pre></td>
+        <td class="large"><p>A paragraph with the word HTML.</p>
+<p>*[HTML]: Hyper-Text Markup Language</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="2">
+        <td rowspan="2" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="headers" rowspan="2" data-filter-value="headers">
+            headers
+        </td>
+    
+	    
+		
+        <td class="large"><pre>my title level 1
+================
+
+my title level 2
+----------------
+
+### my title level 3</pre></td>
+        <td class="large"><h1 id="my-title-level-1">my title level 1</h1>
+<h2 id="my-title-level-2">my title level 2</h2>
+<h3 id="my-title-level-3">my title level 3</h3>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre># my title level 1
+### my title level 3</pre></td>
+        <td class="large"><h1 id="my-title-level-1">my title level 1</h1>
+<h3 id="my-title-level-3">my title level 3</h3>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="3">
+        <td rowspan="3" data-filter-value="typographic">
+            <abbr title="Typographic">T</abbr>
+        </td>
+        <td id="horizontal-rule" rowspan="3" data-filter-value="horizontal-rule">
+            horizontal-rule
+        </td>
+    
+	    
+		
+        <td class="large"><pre>----</pre></td>
+        <td class="large"><hr>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>****</pre></td>
+        <td class="large"><hr>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>____</pre></td>
+        <td class="large"><hr>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="2">
+        <td rowspan="2" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="blockquote" rowspan="2" data-filter-value="blockquote">
+            blockquote
+        </td>
+    
+	    
+		
+        <td class="large"><pre>&gt; This is my blockquote
+  and a second line ...
+</pre></td>
+        <td class="large"><blockquote>
+<p>This is my blockquote
+  and a second line ...</p>
+</blockquote>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>&gt; (http://source.com) This is my blockquote
+  and a second line ...
+</pre></td>
+        <td class="large"><blockquote>
+<p>(<a href="http://source.com">http://source.com</a>) This is my blockquote
+  and a second line ...</p>
+</blockquote>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="3">
+        <td rowspan="3" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="pre-formated" rowspan="3" data-filter-value="pre-formated">
+            pre-formated
+        </td>
+    
+	    
+		
+        <td class="large"><pre>    // this is my 'pre' block
+    $var = val_fct();
+    html <strong>tags</strong> are escaped</pre></td>
+        <td class="large"><pre><code>// this is my 'pre' block
+$var = val_fct();
+html &lt;strong&gt;tags&lt;/strong&gt; are escaped
+</code></pre></td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>~~~~
+My code here
+~~~~
+</pre></td>
+        <td class="large"><pre><code>My code here
+</code></pre></td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>~~~~html
+My code here
+~~~~
+</pre></td>
+        <td class="large"><pre><code class="lang-html">My code here
+</code></pre>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="definitions-list" rowspan="1" data-filter-value="definitions-list">
+            definitions-list
+        </td>
+    
+	    
+		
+        <td class="large"><pre>Word
+:   Definition content (first one)
+    with a two-lines text
+
+:   Second definition for this term...
+</pre></td>
+        <td class="large"><p>Word
+:   Definition content (first one)
+    with a two-lines text</p>
+<p>:   Second definition for this term...</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="3">
+        <td rowspan="3" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="unordered-list" rowspan="3" data-filter-value="unordered-list">
+            unordered-list
+        </td>
+    
+	    
+		
+        <td class="large"><pre>-   first item
+-   second item
+</pre></td>
+        <td class="large"><ul>
+<li>first item</li>
+<li>second item</li>
+</ul>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>+   first item
++   second item
+</pre></td>
+        <td class="large"><ul>
+<li>first item</li>
+<li>second item</li>
+</ul>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>*   first item
+*   second item
+</pre></td>
+        <td class="large"><ul>
+<li>first item</li>
+<li>second item</li>
+</ul>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="ordered-list" rowspan="1" data-filter-value="ordered-list">
+            ordered-list
+        </td>
+    
+	    
+		
+        <td class="large"><pre>1.   first item
+1.   second item
+</pre></td>
+        <td class="large"><ol>
+<li>first item</li>
+<li>second item</li>
+</ol>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="paragraph" rowspan="1" data-filter-value="paragraph">
+            paragraph
+        </td>
+    
+	    
+		
+        <td class="large"><pre>This is my first paragraph.
+
+And this is my second,
+on two lines ...
+</pre></td>
+        <td class="large"><p>This is my first paragraph.</p>
+<p>And this is my second,
+on two lines ...</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="table" rowspan="1" data-filter-value="table">
+            table
+        </td>
+    
+	    
+		
+        <td class="large"><pre>[table caption]
+| First Header  | Second Header | Third Header |
+| ------------- | ------------: | :----------: |
+| Content Cell  | Content right-aligned | Content center-aligned |
+| Content Cell  | Content on two columns ||
+</pre></td>
+        <td class="large"><p>[table caption]
+| First Header  | Second Header | Third Header |
+| ------------- | ------------: | :----------: |
+| Content Cell  | Content right-aligned | Content center-aligned |
+| Content Cell  | Content on two columns ||</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="3">
+        <td rowspan="3" data-filter-value="block">
+            <abbr title="Block">B</abbr>
+        </td>
+        <td id="footnote" rowspan="3" data-filter-value="footnote">
+            footnote
+        </td>
+    
+	    
+		
+        <td class="large"><pre>A paragraph with a footnote[^footnote_one] note.
+
+[^footnote_one]: Footnote content
+</pre></td>
+        <td class="large"><p>A paragraph with a footnote[^footnote_one] note.</p>
+<p>[^footnote_one]: Footnote content</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>A paragraph with a referenced glossary term[^myterm] ...
+
+[^myterm]: glossary: the term defined (an optional sort key)
+The term definition ... which may be multi-line.
+</pre></td>
+        <td class="large"><p>A paragraph with a referenced glossary term[^myterm] ...</p>
+<p>[^myterm]: glossary: the term defined (an optional sort key)
+The term definition ... which may be multi-line.</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>This is a statement that should be attributed to its source [p. 23][#Doe:2006].
+
+[#Doe:2006]: John Doe. *Some Big Fancy Book*.  Vanity Press, 2006.
+</pre></td>
+        <td class="large"><p>This is a statement that should be attributed to its source [p. 23][#Doe:2006].</p>
+<p>[#Doe:2006]: John Doe. <em>Some Big Fancy Book</em>.  Vanity Press, 2006.</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="miscellaneous">
+            <abbr title="Miscellaneous">M</abbr>
+        </td>
+        <td id="references" rowspan="1" data-filter-value="references">
+            references
+        </td>
+    
+	    
+		
+        <td class="large"><pre>A paragraph with a referenced [hypertext link][myid] and some more text embedding an
+image: ![image for the test][myimage].
+
+[myid]: http://example.com/ "Optional link title"        
+[myimage]: http://upload.wikimedia.org/wikipedia/commons/5/5a/Wikipedia-logo-v2-fr.png "Optional image title"
+</pre></td>
+        <td class="large"><p>A paragraph with a referenced <a href="http://example.com/" title="Optional link title">hypertext link</a> and some more text embedding an
+image: <img src="http://upload.wikimedia.org/wikipedia/commons/5/5a/Wikipedia-logo-v2-fr.png" alt="image for the test" title="Optional image title">.</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="12">
+        <td rowspan="12" data-filter-value="miscellaneous">
+            <abbr title="Miscellaneous">M</abbr>
+        </td>
+        <td id="escaping" rowspan="12" data-filter-value="escaping">
+            escaping
+        </td>
+    
+	    
+
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\* asterisk</pre></td>
+        <td class="large"><p>* asterisk</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\+ plus sign</pre></td>
+        <td class="large"><p>+ plus sign</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\- hyphen</pre></td>
+        <td class="large"><p>- hyphen</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\_ underscore</pre></td>
+        <td class="large"><p>_ underscore</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\` backtick quote</pre></td>
+        <td class="large"><p>` backtick quote</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\(\) parentheses</pre></td>
+        <td class="large"><p>() parentheses</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\[\] brackets</pre></td>
+        <td class="large"><p>[] brackets</p>
+</td>
+    </tr>
+        
+		<tr>
+        <td class="large"><pre>\{\} curly brackets</pre></td>
+        <td class="large"><p>{} curly brackets</p>
+</td>
+    </tr>
+        
+	
+
+    <tr data-rows="1">
+        <td rowspan="1" data-filter-value="miscellaneous">
+            <abbr title="Miscellaneous">M</abbr>
+        </td>
+        <td id="meta tags" rowspan="1" data-filter-value="meta tags">
+            meta tags
+            </td>
+	
+
+    </tbody>
+    </table>
+</div>
+
+
 # Heading Level 1
 ```
 # Heading Level 1
