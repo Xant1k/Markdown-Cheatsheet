@@ -4,6 +4,7 @@ https://help.github.com/categories/writing-on-github/
 
 Emoji: http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
+https://www.reddit.com/r/liberta/comments/3fa504/форматирование_текста_руководство/
 
 # Heading Level 1
 ```
